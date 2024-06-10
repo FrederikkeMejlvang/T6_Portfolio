@@ -44,6 +44,10 @@ a:visited{
     background-color: #FA7FC1;
 }
 
+.nav-item:hover{ 
+    border-color: #90C58B;
+}
+
 img{
     width: 100%;
     top: 0%;
@@ -63,11 +67,11 @@ h1, h2, h3, h4, h5{
 }
 
 h1{
-    font-size: 48px;
+    font-size: 34px;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 28px;
 }
 
 h3{
@@ -86,6 +90,50 @@ p{
 
 p.folder_tekst{
     text-align: center;
+}
+
+.projekter_link:hover{
+content: url(../billeder/alle_projekter_link_hover.svg);
+}
+
+.instagram_link:hover{
+    content: url(../billeder/instagram_hover.svg);
+}
+
+.folder:hover{
+    content: url(../billeder/folder_hover.svg);
+}
+
+.tema_link1:hover{
+    content: url(../billeder/t2_link_hover.svg);
+}
+
+.tema_link2:hover{
+    content: url(../billeder/t3_link_hover.svg);
+}
+
+.tema_link3:hover{
+    content: url(../billeder/t4_link_hover.svg);
+}
+
+.tema_link4:hover{
+    content: url(../billeder/t5_link_hover.svg);
+}
+
+.t2_google_hover:hover{
+    content: url(../billeder/t2_google_hover.svg);
+}
+.t3_google_hover:hover{
+    content: url(../billeder/t3_google_hover.svg);
+}
+.t4_google_hover:hover{
+    content: url(../billeder/t4_google_hover.svg);
+}
+.t5_google_hover1:hover{
+    content: url(../billeder/t5_google_hover1.svg);
+}
+.t5_google_hover2:hover{
+    content: url(../billeder/t5_google_hover2.svg);
 }
 
 @font-face {

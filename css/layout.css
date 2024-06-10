@@ -29,8 +29,10 @@ main{
   }
   
   .nav-menu {
-      display: flex;
-      margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
   }
 
   .nav-logo {
@@ -64,6 +66,22 @@ main{
     background-color: #FA7FC1;
   }
 
+  .grid_1-1{
+    display: grid;
+    row-gap: 40px;
+  }
+
+  hr{
+    margin-top: 0px;
+  }
+
+  .nav-logo{
+    margin-top: 20px;
+  }
+
+.t_img{
+  margin-top: 40px;
+}
 
 @media (min-width: 800px) {
     body{
@@ -81,8 +99,10 @@ main{
         margin: 40px;
     }
 
+ 
+
     h1{
-        font-size: 96px;
+        font-size: 72px;
     }
 
     h2{
@@ -94,10 +114,10 @@ main{
     }
 
     h4{
-        font-size: 24;
+        font-size: 24px;
     }
     p{
-        font-size: 20;
+        font-size: 20px;
     }
     hr{
         margin-left: 40px;
@@ -136,6 +156,18 @@ main{
       }
 }
 
+@media (max-width: 800px) {
+  .grid_1-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+  .grid_1-1{
+    row-gap: 0px;
+  }
+}
+
 @media (max-width: 950px) {
     /*Burger Menu*/
 
@@ -150,7 +182,7 @@ main{
         align-items: center;
         transition: 0.5s;
         background-color: #F6F5F1;
-      }
+    }
     
       .nav-menu.active {
         left: 0;
@@ -169,13 +201,11 @@ main{
       }
     
       .hamburger.active .bar:nth-child(1) {
-        translate: 0 8px;
-        rotate: 45deg;
+        transform: translate(0, 8px) rotate(45deg);
       }
     
       .hamburger.active .bar:nth-child(3) {
-        translate: 0 -8px;
-        rotate: -45deg;
+        transform: translate(0, -8px) rotate(-45deg);
       }
 
 }
