@@ -92,6 +92,14 @@ p.folder_tekst{
     text-align: center;
 }
 
+.tema{
+    margin-top: 40px;
+}
+
+a.tema_link:hover{
+    color: #90C58B;
+}
+
 .projekter_link:hover{
 content: url(../billeder/alle_projekter_link_hover.svg);
 }
@@ -102,22 +110,6 @@ content: url(../billeder/alle_projekter_link_hover.svg);
 
 .folder:hover{
     content: url(../billeder/folder_hover.svg);
-}
-
-.tema_link1:hover{
-    content: url(../billeder/t2_link_hover.svg);
-}
-
-.tema_link2:hover{
-    content: url(../billeder/t3_link_hover.svg);
-}
-
-.tema_link3:hover{
-    content: url(../billeder/t4_link_hover.svg);
-}
-
-.tema_link4:hover{
-    content: url(../billeder/t5_link_hover.svg);
 }
 
 .t2_google_hover:hover{
