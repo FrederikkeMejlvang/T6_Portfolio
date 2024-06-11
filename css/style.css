@@ -5,19 +5,20 @@ body {
     border-color: #FA7FC1;
     border-radius: 20px;
     border-width: 1px;
+    font-size: 100%
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 a {
-  text-decoration: none;
-  font-family: "IBM_regular";
-  font-size: 20px;
-  font-weight: lighter;
-  color: #FA7FC1;
+    text-decoration: none;
+    font-family: "IBM_regular";
+    font-size: 20px;
+    font-weight: lighter;
+    color: #FA7FC1;
 }
 
 .nav-item{
@@ -96,18 +97,42 @@ p.folder_tekst{
     margin-top: 40px;
 }
 
+a.tema_link{
+    font-size: 1.1em;
+}
+
 a.tema_link:hover{
     color: #90C58B;
 }
 
-.projekter_link:hover{
-content: url(../billeder/alle_projekter_link_hover.svg);
+a.next:hover{
+    color: #90C58B;
 }
 
+a.back:hover{
+    color: #90C58B;
+}
+
+@font-face {
+    font-family: "IBM_semibold";
+    src: url(font/IBM_Plex_Mono/IBMPlexMono-SemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: "IBM_regular";
+    src: url(font/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+  }
+
+
+@media (min-width: 800px) {
+.projekter_link:hover{
+    content: url(../billeder/alle_projekter_link_hover.svg);
+}
+    
 .instagram_link:hover{
     content: url(../billeder/instagram_hover.svg);
 }
-
+        
 .folder:hover{
     content: url(../billeder/folder_hover.svg);
 }
@@ -127,13 +152,4 @@ content: url(../billeder/alle_projekter_link_hover.svg);
 .t5_google_hover2:hover{
     content: url(../billeder/t5_google_hover2.svg);
 }
-
-@font-face {
-    font-family: "IBM_semibold";
-    src: url(font/IBM_Plex_Mono/IBMPlexMono-SemiBold.ttf);
-  }
-
-  @font-face {
-    font-family: "IBM_regular";
-    src: url(font/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
-  }
+}
